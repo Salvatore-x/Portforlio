@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>Hi, I'm Edobor Favour</h2>
+        <p>I build modern and responsive websites.</p>
+        <a href="#portfolio" class="btn">View My Work</a>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate web developer with a sharp eye for clean design and a love for bringing ideas to life on the web. Whether it's building sleek business sites or interactive portfolios, I combine creativity with code to craft responsive, user-focused experiences. I stay on top of trends, continuously sharpen my skills, and deliver projects that not only look good but work flawlessly. Let’s turn your vision into something users will remember.</p>
+    </section>
+    
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="project">
+            <img src="KDH.PNG" alt="Project 1">
+            <p> <b>Kids Dream Haven Website</b></p>
+            <p>I designed and developed the official website for Kids Dream Haven, a nonprofit foundation focused on supporting children and families through charitable initiatives. The website highlights the organization’s mission, current projects, volunteer opportunities, and donation channels. Built with HTML, CSS, and JavaScript, the site is fully responsive and optimized for both desktop and mobile users. My goal was to create a clean, user-friendly platform that effectively communicates the foundation’s values and encourages community engagement.</p>
+            <a href="https://salvatore-x.github.io/kidsdreamhaven/" class="btn" target="_blank">View Site</a>
+        </div>
+        
+        <!-- Add more projects here -->
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>PHP</li>
+            <li>Responsive Web Design</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Website Management</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form id="portfolioForm">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        
+        <!-- Include EmailJS -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+            emailjs.init('NpoIPU3GnSuzPOqBI'); // Replace with your EmailJS Public Key
+        </script>
+        
+        <!-- Link to your JavaScript file -->
+        <script src="script.js"></script>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Salvatore-x. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
